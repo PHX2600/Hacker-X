@@ -1,0 +1,267 @@
+/*
+Theme Name: Hacker X
+Theme URI: https://github.com/PHX2600/Hacker-X
+Description: Custom Wordpress theme for www.phx2600.org
+Author: Chris Kankiewicz
+Author URI: http://www.ChrisKankiewicz.com
+Version: 1.0
+Tags: black, red, white, fixed-width, custom-menu (optional)
+
+License: Creative Commons Attribution 3.0 Unported
+License URI: http://creativecommons.org/licenses/by/3.0/
+*/
+
+/* -------------------------------------------------------------------------- */
+/* -----| GENERAL |---------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+html {
+    background-color: #EEEDEA;
+    font-size: 100%;
+}
+
+body {
+    color: #333;
+    font-family: Arial, Helvetica, sans-serif, Verdana;
+    font-size: .9em;
+    min-width: 780px;
+}
+
+a {
+    color: #981B1E;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.widthConstraint {
+    margin: 0 auto;
+    width: 960px;
+    position: relative;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* -----| HEADER |----------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+#siteHeader {
+    background: -moz-linear-gradient(center top , #323232, #020202) repeat scroll 0 0 #121212;
+    border-bottom: 5px solid #981B1E;
+    padding: 15px 30px;
+    overflow: hidden;
+}
+
+#siteTitle {
+    display: inline-block;
+    margin: 0 ;
+}
+
+#siteTitle a {
+    background: transparent url(images/phx2600_logo.png) no-repeat center center;
+    display: block;
+    height: 40px;
+    width: 214px;
+}
+
+
+
+/* -------------------------------------------------------------------------- */
+/* -----| NAVIGATION |------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+#siteNavigation {
+    display: inline-block;
+    margin: 6px 0;
+}
+
+#siteNavigation li {
+    display: inline-block;
+    float: left;
+    list-style: none;
+    margin-left: 5px;
+}
+
+#siteNavigation li a {
+    color: #CCC;
+    display: block;
+    padding: 5px 10px;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#siteNavigation li a:hover {
+    text-decoration: underline;
+}
+
+#siteNavigation li.activeLink a {
+    background-color: #CCC;
+    border-radius: 2px;
+    color: #333;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* -----| CONTENT |---------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+#siteContent {
+    padding: 0 30px 30px;
+}
+
+#siteContent p,
+#siteContent ul,
+#siteContent ol {
+    line-height: 1.5em;
+}
+
+#siteContent p {
+    margin: 1em 0 0;
+}
+
+#definition {
+    border-top: 1px solid #DEDEDE;
+    border-bottom: 1px solid #F6F6F6;
+    margin: .5em 0;
+}
+
+#definitionInner{
+    border-top: 1px solid #F6F6F6;
+    border-bottom: 1px solid #DEDEDE;
+    color: #888;
+    font-size: .9em;
+    padding: 5px 0;
+    text-align: center;
+    text-shadow: 1px 1px 0 #FFF;
+} 
+
+#contentBox {
+    background-color: #FFF;
+    border: 1px solid #DFDFDF;
+    padding: 20px;
+    -moz-border-radius: 10px;
+}
+
+#meetingInfo {
+    background-color: #EEC;
+    margin-bottom: 2em;
+    padding: 10px;
+}
+
+#meetingInfo .left {
+    background-color: #FFF;
+    border: 1px solid #CCC;
+    padding: 3px;
+    margin-right: -100%;
+}
+
+#meetingInfo .left small {
+    display: none;
+}
+
+#meetingInfo .text {
+    font-size: 1.2em;
+    margin-left: 442px;
+    text-align: center;
+}
+
+#meetingInfo .text h3 {
+    color: #333;
+    margin: 0 0 1em;
+}
+
+#nextMeetingWrapper {
+    background-color: #555;
+    color: #ACACAC;
+    display: inline-block;
+    margin-top: 2em;
+    padding: 10px;
+    text-align: left;
+    -moz-border-radius: 10px;
+}
+
+#nextMeetingWrapper h4 {
+    color: #FFF;
+    margin-bottom: 1em;
+}
+
+#nextMeetingWrapper p {
+    margin: 1em 0;
+}
+
+#nextMeetingWrapper .meetingMonth,
+#nextMeetingWrapper .meetingDay,
+#nextMeetingWrapper .meetingYear {
+    background-color: #FFF;
+    border-radius: 8px;
+    color: #121212;
+    display: inline-block;
+    font-size: 2.75em;
+    font-weight: bold;
+    margin: 3px;
+    position: relative;
+    -moz-border-radius: 8px;
+    -moz-box-shadow: 0px 1px 3px #121212;
+    -webkit-border-radius: 8px;
+    -webkit-box-shadow: 0px 1px 3px #121212;
+}
+
+#nextMeetingWrapper .number {
+    padding: 16px 24px;
+}
+
+#nextMeetingWrapper .midLine {
+    background-color: #121212;
+    height: 1px;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    
+}
+
+#nextMeetingWrapper .meetingComma {
+    color: #333;
+    display: inline-block;
+    font-size: 3.5em;
+    font-weight: bold;
+    padding: 16px 4px;
+}
+
+.sectionTitle {
+    border-bottom: 1px dotted #666;
+}
+
+#meetingGuidelines ul,
+#meetingGuidelines ol {
+    margin-left: 40px;
+}
+
+#meetingGuidelines ul li,
+#meetingGuidelines ol li {
+    margin-bottom: .8em;
+}
+
+#meetingGuidelines ul ul li {
+    list-style: circle;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* -----| MISCELLANEOUS |---------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+.hideText {
+    margin-left: -20000px !important;
+}
+
+.note {
+    background-color: #FFD;
+    border: 1px solid #000;
+    margin: 2em 0;
+    padding: 10px;
+    font-size: .85em;
+}
