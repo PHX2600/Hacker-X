@@ -74,20 +74,21 @@ a:hover {
 
 #siteNavigation {
     display: inline-block;
-    margin: 6px 0;
+    margin: 8px 0 0;
 }
 
 #siteNavigation li {
     display: inline-block;
     float: left;
     list-style: none;
-    margin-left: 5px;
+    margin-left: 3px;
 }
 
 #siteNavigation li a {
     color: #CCC;
     display: block;
-    padding: 5px 10px;
+    font-size: .9em;
+    padding: 4px 7px;
     text-decoration: none;
     text-transform: uppercase;
 }
@@ -96,7 +97,7 @@ a:hover {
     text-decoration: underline;
 }
 
-#siteNavigation li.activeLink a {
+#siteNavigation li.current_page_item a {
     background-color: #CCC;
     border-radius: 2px;
     color: #333;
