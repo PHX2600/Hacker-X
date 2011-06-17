@@ -94,15 +94,13 @@ a:hover {
 }
 
 #siteNavigation li a:hover {
-    text-decoration: underline;
+    color: #FFF;
 }
 
-#siteNavigation li.current_page_item a {
-    background-color: #CCC;
-    border-radius: 2px;
-    color: #333;
-    -moz-border-radius: 2px;
-    -webkit-border-radius: 2px;
+#siteNavigation li.current_page_item a,
+#siteNavigation li.current-menu-item a {
+    color: #FFF;
+    text-decoration: underline;
 }
 
 
