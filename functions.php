@@ -1,5 +1,10 @@
 <?php
 
+    // Register Menu(s)
+    if ( function_exists( 'register_nav_menu' ) ) {
+        register_nav_menu( 'primary_navigation', 'Primary Navigation' );
+    }
+
     // Widgetize Sidebar
     if (function_exists('register_sidebar')) {
         register_sidebar(

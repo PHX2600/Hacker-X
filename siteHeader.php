@@ -11,7 +11,7 @@
             wp_nav_menu(array(
                 'menu_id' => 'siteNavigation',
                 'menu_class' => 'floatRight',
-                'menu' => 'Primary Navigation'
+                'theme_location' => 'primary_navigation'
             )); ?>
         
         
