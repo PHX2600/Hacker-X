@@ -18,9 +18,11 @@
                 </div>
             </div>
             
+            <?php include(TEMPLATEPATH . '/notifications.php'); ?>
+            
             <div id="contentBox">
                 <div id="meetingInfo" class="clearfix">
-                    <div class="left">
+                    <div class="floatLeft">
                         <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="http://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=lola+coffee,+phoenix,+az&amp;aq=&amp;sll=37.09024,-102.392578&amp;sspn=37.598824,56.513672&amp;ie=UTF8&amp;hq=lola+coffee,&amp;hnear=Phoenix,+Maricopa,+Arizona&amp;cid=17466708338773990751&amp;ll=33.51671,-112.073164&amp;spn=0.025046,0.036478&amp;z=14&amp;iwloc=A&amp;output=embed"></iframe><br /><small><a href="http://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=lola+coffee,+phoenix,+az&amp;aq=&amp;sll=37.09024,-102.392578&amp;sspn=37.598824,56.513672&amp;ie=UTF8&amp;hq=lola+coffee,&amp;hnear=Phoenix,+Maricopa,+Arizona&amp;cid=17466708338773990751&amp;ll=33.51671,-112.073164&amp;spn=0.025046,0.036478&amp;z=14&amp;iwloc=A" style="color:#0000FF;text-align:left">View Larger Map</a></small>
                     </div>
                     

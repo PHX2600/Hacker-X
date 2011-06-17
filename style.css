@@ -152,14 +152,14 @@ a:hover {
     padding: 10px;
 }
 
-#meetingInfo .left {
+#meetingInfo .floatLeft {
     background-color: #FFF;
     border: 1px solid #CCC;
     padding: 3px;
     margin-right: -100%;
 }
 
-#meetingInfo .left small {
+#meetingInfo .floatLeft small {
     display: none;
 }
 
