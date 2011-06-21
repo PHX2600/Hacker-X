@@ -22,7 +22,20 @@
             
             <div id="contentBox">
                 
-                <!-- Content -->
+                <?php // if (the_title()): ?>
+                    <div id="titleWrapper" class="clearfix">
+                        <h2 id="pageTitle" class="floatLeft"><?php the_title(); ?></h2>
+                    </div>
+                <?php // endif; ?>
+                
+                <?php 
+                    if (have_posts()) {
+                        while (have_posts()){
+                          the_post();
+                          the_content();
+                        }
+                    }
+                ?>
                 
             </div>
         </div>

@@ -108,6 +108,15 @@ a:hover {
 /* -----| CONTENT |---------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
 
+#titleWrapper {
+    border-bottom: 1px dotted #CCC;
+    padding-bottom: 3px;    
+}
+
+#pageTitle {
+    margin: 0;
+}
+
 #siteContent {
     padding: 0 30px 30px;
 }
