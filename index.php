@@ -20,26 +20,37 @@
             
             <?php include(TEMPLATEPATH . '/notifications.php'); ?>
             
-            <div id="contentBox">
-                
-                <?php // if (the_title()): ?>
-                    <div id="titleWrapper" class="clearfix">
-                        <h2 id="pageTitle" class="floatLeft"><?php the_title(); ?></h2>
+            <?php if (have_posts()): ?>
+                <?php while (have_posts()): ?>
+                    <div class="contentBox">
+                        
+                        <?php // if (the_title()): ?>
+                            <div class="titleWrapper clearfix">
+                                <h2 class="postTitle floatLeft">
+                                    <a href="<?php the_permalink(); ?>" title="Permanent Link to <?php the_title_attribute(); ?>">
+                                        <?php the_title(); ?>
+                                    </a>
+                                    
+                                </h2>
+                                <?php if(current_user_can('edit_post', $post->ID)): ?>
+                                    <span class="postEdit"><?php edit_post_link('Edit', '', ''); ?></span>
+                                <?php endif; ?>
+                            </div>
+                        <?php // endif; ?>
+                        
+                                <?php the_post(); the_content(); ?>
+                        
                     </div>
-                <?php // endif; ?>
-                
-                <?php 
-                    if (have_posts()) {
-                        while (have_posts()){
-                          the_post();
-                          the_content();
-                        }
-                    }
-                ?>
-                
-            </div>
+                <?php endwhile; ?>
+            <?php endif; ?>
         </div>
     </div>
+    
+    <?php if(function_exists('wp_pagenavi')): ?>
+        <div id="pagination">
+            <?php wp_pagenavi(); ?>
+        </div>
+    <?php endif; ?>
     
     <?php get_footer(); ?>
 

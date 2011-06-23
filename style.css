@@ -108,13 +108,18 @@ a:hover {
 /* -----| CONTENT |---------------------------------------------------------- */
 /* -------------------------------------------------------------------------- */
 
-#titleWrapper {
+.titleWrapper {
     border-bottom: 1px dotted #CCC;
     padding-bottom: 3px;    
 }
 
-#pageTitle {
+.postTitle {
     margin: 0;
+}
+
+.postEdit {
+    display: inline-block;
+    float: right;
 }
 
 #siteContent {
@@ -147,11 +152,14 @@ a:hover {
     text-shadow: 1px 1px 0 #FFF;
 } 
 
-#contentBox {
+.contentBox {
     background-color: #FFF;
     border: 1px solid #DFDFDF;
+    border-radius: 10px;
+    margin-bottom: 30px;
     padding: 20px;
     -moz-border-radius: 10px;
+    -webkit-border-radius: 10px;
 }
 
 #meetingInfo {
