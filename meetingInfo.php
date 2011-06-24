@@ -51,18 +51,21 @@
                                 
                                 <div id="nextMeetingWrapper">
                                     <p>The next meeting will be held at 6:00 PM on:</p>
-                                    <div class="meetingMonth">
-                                        <div class="number"><?php echo $ff->firstFriday(true, "M"); ?></div>
-                                        <div class="midLine"></div>
-                                    </div>
-                                    <div class="meetingDay">
-                                        <div class="number"><?php echo $ff->firstFriday(true, "d"); ?></div>
-                                        <div class="midLine"></div>
-                                    </div>
-                                    <div class="meetingYear">
-                                        <div class="number"><?php echo $ff->firstFriday(true, "Y"); ?></div>
-                                        <div class="midLine"></div>
-                                    </div>
+                                    
+                                    <center>
+                                        <div class="meetingMonth">
+                                            <div class="number"><?php echo $ff->firstFriday(true, "M"); ?></div>
+                                            <div class="midLine"></div>
+                                        </div>
+                                        <div class="meetingDay">
+                                            <div class="number"><?php echo $ff->firstFriday(true, "d"); ?></div>
+                                            <div class="midLine"></div>
+                                        </div>
+                                        <div class="meetingYear">
+                                            <div class="number"><?php echo $ff->firstFriday(true, "Y"); ?></div>
+                                            <div class="midLine"></div>
+                                        </div>
+                                    </center>
                                     
                                     <p> at Lola Coffee<br/>
                                     4700 North Central Avenue<br/>

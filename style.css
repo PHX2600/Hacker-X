@@ -48,7 +48,7 @@ a:hover {
 /* -------------------------------------------------------------------------- */
 
 #siteHeader {
-    background: -moz-linear-gradient(center top , #323232, #020202) repeat scroll 0 0 #121212;
+    background: #020202 url(images/black_gradient.png) repeat-x left top;
     border-bottom: 5px solid #981B1E;
     padding: 15px 30px;
     overflow: hidden;
@@ -170,7 +170,7 @@ a:hover {
 #definition {
     border-top: 1px solid #DEDEDE;
     border-bottom: 1px solid #F6F6F6;
-    margin: .5em 0;
+    margin: 10px 0;
 }
 
 #definitionInner{
@@ -195,7 +195,7 @@ a:hover {
 
 #meetingInfo {
     background-color: #EEC;
-    margin-bottom: 2em;
+    margin-bottom: 20px;
     padding: 10px;
 }
 
@@ -223,22 +223,23 @@ a:hover {
 
 #nextMeetingWrapper {
     background-color: #555;
+    border-radius: 10px;
     color: #ACACAC;
     display: inline-block;
-    margin-top: 1.5em;
-    padding: 20px;
+    margin-top: 28px;
+    padding: 20px 20px;
     text-align: left;
     -moz-border-radius: 10px;
-}
-
-#nextMeetingWrapper h4 {
-    color: #FFF;
-    margin-bottom: 1em;
+    -webkit-border-radius: 10px;
 }
 
 #nextMeetingWrapper p {
     margin: 1em 0;
     text-align: center;
+}
+
+#nextMeetingWrapper .dateWrapper {
+    display: inline-block;
 }
 
 #nextMeetingWrapper .meetingMonth,
@@ -248,7 +249,7 @@ a:hover {
     border-radius: 8px;
     color: #121212;
     display: inline-block;
-    font-size: 2.75em;
+    font-size: 2.5em;
     font-weight: bold;
     margin: 3px;
     position: relative;
