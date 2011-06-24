@@ -127,23 +127,31 @@ a:hover {
     text-decoration: underline;
 }
 
-.editLink {
+.postInfo {
+    font-size: .9em;
+}
+
+.post-edit-link {
     background: url(images/icons/page_white_edit.png) no-repeat scroll left center transparent;
     display: inline-block;
-    padding-left: 20px;
+    padding: 1px 0 1px 20px;
 }
 
 .postComments {
     background: transparent url(images/icons/comments.png) no-repeat left center;
     display: inline-block;
-    padding: 0 0 0 20px;
+    padding: 1px 0 1px 20px;
 }
 
 #siteContent {
     padding: 0 30px 30px;
 }
 
-#siteContent p,
+#siteContent p {
+    line-height: 1.5em;
+    text-align: justify;
+}
+    
 #siteContent ul,
 #siteContent ol {
     line-height: 1.5em;

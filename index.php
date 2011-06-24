@@ -35,10 +35,8 @@
                             </h2>
                             
                             <div class="postInfo floatRight">
-                                <?php if(current_user_can('edit_post', $post->ID)): ?>
-                                    <a href="<?php get_edit_post_link($post->ID); ?>" class="editLink">Edit</a> |
-                                <?php endif; ?>
-                                <?php comments_popup_link('No Comments', '1 Comment', '% Comments', 'postComments', 'Comments disabled'); ?>
+                                <?php edit_post_link('Edit', null, ' | '); ?>
+                                <?php comments_popup_link('No Comments', '1 Comment', '% Comments', 'postComments', 'Comments Disabled'); ?>
                             </div>
                         </div>
                         
