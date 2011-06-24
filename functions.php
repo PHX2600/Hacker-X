@@ -2,7 +2,7 @@
 
     // Add featured images support
     add_theme_support('post-thumbnails');
-    set_post_thumbnail_size(918, 240);
+    set_post_thumbnail_size(918, 250);
 
     // Register Menu(s)
     if (function_exists('register_nav_menu')) {
