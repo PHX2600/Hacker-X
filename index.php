@@ -34,25 +34,22 @@
                                 </a>
                             </h2>
                             
-                            <?php if(current_user_can('edit_post', $post->ID)): ?>
-                                <a href="<?php get_edit_post_link($post->ID); ?>" class="editLink">Edit</a>
-                            <?php endif; ?>
+                            <div class="postInfo floatRight">
+                                <?php if(current_user_can('edit_post', $post->ID)): ?>
+                                    <a href="<?php get_edit_post_link($post->ID); ?>" class="editLink">Edit</a> |
+                                <?php endif; ?>
+                                <?php comments_popup_link('No Comments', '1 Comment', '% Comments', 'postComments', 'Comments disabled'); ?>
+                            </div>
                         </div>
                         
                         <?php the_content(); ?>
                         
                         <div class="postMetaData">
-                            <div class="metaDataTop">
-                                Posted by, <?php the_author_posts_link() ?>
-                                on <?php the_time(get_option('date_format')); ?>
-                                at <?php the_time(); ?> |
-                                <?php comments_popup_link('No Comments', '1 Comment', '% Comments', 'postComments', 'Comments disabled'); ?>
-                            </div>
-                            
-                            <div class="metaDataBottom">
-                                <span class="postCategory">Category: <?php the_category(' &bull; ') ?></span>
-                                <?php the_tags('<span class="postTags">Tags: ', ' &bull; ', '</span>'); ?>
-                            </div>
+                            Posted by, <?php the_author_posts_link() ?>
+                            on <?php the_time(get_option('date_format')); ?>
+                            at <?php the_time(); ?>
+                            to <?php the_category(', '); ?>
+                            with the tags <?php the_tags(''); ?>
                         </div>
                         
                     </div>

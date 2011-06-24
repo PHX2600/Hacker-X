@@ -114,7 +114,7 @@ a:hover {
 }
 
 .postTitle {
-    font-size: 1.4em;
+    font-size: 1.2em;
     font-weight: normal;
     margin: 0;
 }
@@ -130,8 +130,13 @@ a:hover {
 .editLink {
     background: url(images/icons/page_white_edit.png) no-repeat scroll left center transparent;
     display: inline-block;
-    float: right;
     padding-left: 20px;
+}
+
+.postComments {
+    background: transparent url(images/icons/comments.png) no-repeat left center;
+    display: inline-block;
+    padding: 0 0 0 20px;
 }
 
 #siteContent {
@@ -283,32 +288,13 @@ a:hover {
 
 .postMetaData {
     background-color: #EEEECC;
-    font-size: .9em;
+    font-size: .85em;
     margin-top: 1em;
     padding: 10px;
 }
 
 .metaDataTop {
     margin-bottom: 5px;
-}
-
-.postComments {
-    background: transparent url(images/icons/comments.png) no-repeat left center;
-    display: inline-block;
-    padding: 1px 0 1px 20px;
-}
-
-.postCategory {
-    background: transparent url(images/icons/application_view_list.png) no-repeat left center;
-    display: inline-block;
-    padding: 1px 0 1px 20px;
-}
-
-.postTags {
-    background: transparent url(images/icons/tag_blue.png) no-repeat left center;
-    display: inline-block;
-    margin-left: 15px;
-    padding: 1px 0 1px 20px;
 }
 
 
