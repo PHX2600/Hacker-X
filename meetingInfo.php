@@ -29,31 +29,26 @@
                     </div>
                     
                     <div class="text">
-                        <!-- <h3>Meeting Information</h3> -->
                         <?php $ff = new FirstFriday(); ?>
                         
                         <div id="nextMeetingWrapper">
-                            <!-- <h4>Meeting Information</h4> -->
+                            <p>The next meeting will be held at 6:00 PM on:</p>
+                            <div class="meetingMonth">
+                                <div class="number"><?php echo $ff->firstFriday(true, "M"); ?></div>
+                                <div class="midLine"></div>
+                            </div>
+                            <div class="meetingDay">
+                                <div class="number"><?php echo $ff->firstFriday(true, "d"); ?></div>
+                                <div class="midLine"></div>
+                            </div>
+                            <div class="meetingYear">
+                                <div class="number"><?php echo $ff->firstFriday(true, "Y"); ?></div>
+                                <div class="midLine"></div>
+                            </div>
                             
-                            <center>
-                                <p>The next meeting will be held at 6:00 PM on:</p>
-                                <div class="meetingMonth">
-                                    <div class="number"><?php echo $ff->firstFriday(true, "M"); ?></div>
-                                    <div class="midLine"></div>
-                                </div>
-                                <div class="meetingDay">
-                                    <div class="number"><?php echo $ff->firstFriday(true, "d"); ?></div>
-                                    <div class="midLine"></div>
-                                </div>
-                                <div class="meetingYear">
-                                    <div class="number"><?php echo $ff->firstFriday(true, "Y"); ?></div>
-                                    <div class="midLine"></div>
-                                </div>
-                                
-                                <p> at Lola Coffee<br/>
-                                4700 North Central Avenue<br/>
-                                Phoenix, Arizona 85012</p>
-                            </center>
+                            <p> at Lola Coffee<br/>
+                            4700 North Central Avenue<br/>
+                            Phoenix, Arizona 85012</p>
                         </div>
                         
                     </div>

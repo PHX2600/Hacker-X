@@ -1,8 +1,12 @@
 <?php
 
+    // Add featured images support
+    add_theme_support('post-thumbnails');
+    set_post_thumbnail_size(918, 240);
+
     // Register Menu(s)
-    if ( function_exists( 'register_nav_menu' ) ) {
-        register_nav_menu( 'primary_navigation', 'Primary Navigation' );
+    if (function_exists('register_nav_menu')) {
+        register_nav_menu('primary_navigation', 'Primary Navigation');
     }
 
     // Widgetize Sidebar

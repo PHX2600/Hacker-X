@@ -40,7 +40,13 @@
                             </div>
                         </div>
                         
-                        <?php the_content(); ?>
+                        <?php if (has_post_thumbnail()): ?>
+                            <?php the_post_thumbnail('full', array('class' => 'postFeaturedImage')); ?>
+                        <?php endif; ?>
+                        
+                        <div class="postContent clearfix">
+                            <?php the_content(); ?>
+                        </div>
                         
                         <div class="postMetaData">
                             Posted by, <?php the_author_posts_link() ?>

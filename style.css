@@ -110,7 +110,8 @@ a:hover {
 
 .titleWrapper {
     border-bottom: 1px dotted #CCC;
-    padding-bottom: 3px;    
+    margin-bottom: 1em;
+    padding-bottom: 3px;
 }
 
 .postTitle {
@@ -141,6 +142,11 @@ a:hover {
     background: transparent url(images/icons/comments.png) no-repeat left center;
     display: inline-block;
     padding: 1px 0 1px 20px;
+}
+
+.postFeaturedImage {
+    display: block;
+    margin: 1em 0;
 }
 
 #siteContent {
@@ -232,6 +238,7 @@ a:hover {
 
 #nextMeetingWrapper p {
     margin: 1em 0;
+    text-align: center;
 }
 
 #nextMeetingWrapper .meetingMonth,
