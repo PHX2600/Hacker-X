@@ -53,7 +53,7 @@
                             on <?php the_time(get_option('date_format')); ?>
                             at <?php the_time(); ?>
                             to <?php the_category(', '); ?>
-                            with the tags <?php the_tags(''); ?>
+                            <?php the_tags('with the tags '); ?>
                         </div>
                         
                     </div>
