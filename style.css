@@ -299,7 +299,7 @@ a:hover {
 
 
 /* -------------------------------------------------------------------------- */
-/* -----| POST META DATA |--------------------------------------------------- */
+/* -----| POST META DATA & COMMENTS |---------------------------------------- */
 /* -------------------------------------------------------------------------- */
 
 .postMetaData {
@@ -311,6 +311,31 @@ a:hover {
 
 .metaDataTop {
     margin-bottom: 5px;
+}
+
+#comments {
+    border-top: 3px solid #CCC;
+    margin-top: 1em;
+}
+
+#commentsTitle {
+    color: #999;
+    font-size: .9em;
+    font-weight: normal;
+    margin: 1em 0 1em;
+    text-transform: uppercase;
+}
+
+#comments .comment {
+    border-top: 1px dotted #CCC;
+    margin-top: 1em;
+    padding: 20px;
+}
+
+#comments .avatar {
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -webkit-border-radius: 4px;
 }
 
 
