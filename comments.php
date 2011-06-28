@@ -16,20 +16,22 @@
         <div class="commentList">
             <?php foreach ($comments as $comment): ?>
                 <div class="comment clearfix" id="comment-<?php comment_ID(); ?>">
-                    <div class="floatLeft">
-                        <?php echo get_avatar($comment->comment_author_email, $size = '64'); ?>
-                    </div>
+                    <?php echo get_avatar($comment->comment_author_email, $size = '80'); ?>
                     
-                    <div class="commentInfo floatRight">
+                    <div class="commentWrapper floatRight">
                         
-                        <div id="comment-author-text" class="clearfix">
-                            <strong><?php comment_author_link(); ?></strong>
-                            <a href="#comment-<?php comment_ID(); ?>" title="" class="comment-date"><?php comment_date('F j, Y'); ?></a>
+                        <div class="commentInfo clearfix">
+                            <div class="floatLeft">
+                                By, <?php comment_author_link(); ?> on <a href="#comment-<?php comment_ID(); ?>"><?php comment_date('F j, Y'); ?></a>
+                            </div>
+                            <div class="floatRight">
+                                <?php edit_comment_link('Edit'); ?>
+                            </div>
                         </div>
-                    
-                        <?php edit_comment_link('Edit'); ?>
                         
                         <?php comment_text(); ?>
+                        
+                        <div class="commentNotch"></div>
                     </div>
                     
                     
