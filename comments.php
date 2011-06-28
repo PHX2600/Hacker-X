@@ -10,7 +10,7 @@
         <?php endif; ?>
         */ ?>
         
-        <h4 id="commentsTitle">Comments: <?php comments_number('No Responses', 'One Response', '% Responses' ); ?> to "<?php the_title(); ?>"</h4>
+        <h4 id="commentsTitle"><?php comments_number('No Responses', 'One Response', '% Responses' ); ?> to "<?php the_title(); ?>"</h4>
         
         
         <div class="commentList">
@@ -37,6 +37,10 @@
                     
                 </div>
             <?php endforeach; ?>
+            
+            <?php if (comments_open()): ?>
+                Comment form here...
+            <?php endif; ?>
         </div>
         
         
