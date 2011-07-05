@@ -61,22 +61,22 @@
                     </div>
                     
                 <?php endwhile; ?>
-                
             <?php else: ?>
                 <div class="contentBox">
                     <p>Sorry, no posts matched your criteria.Sorry, no posts matched your criteria.</p>
                 </div>
             <?php endif; ?>
+    
+            <?php if(function_exists('wp_pagenavi')): ?>
+                <div id="pagination">
+                    <?php wp_pagenavi(); ?>
+                </div>
+            <?php endif; ?>
+            
+            <?php get_footer(); ?>
+
         </div>
     </div>
-    
-    <?php if(function_exists('wp_pagenavi')): ?>
-        <div id="pagination">
-            <?php wp_pagenavi(); ?>
-        </div>
-    <?php endif; ?>
-    
-    <?php get_footer(); ?>
 
 </body>
 

@@ -168,18 +168,18 @@ a:hover {
     margin: 1em 0 0;
 }
 
-#definition {
+#definition, #footer {
     border-top: 1px solid #DEDEDE;
     border-bottom: 1px solid #F6F6F6;
     margin: 10px 0;
 }
 
-#definitionInner{
+#definitionInner, #footerInner {
     border-top: 1px solid #F6F6F6;
     border-bottom: 1px solid #DEDEDE;
     color: #888;
     font-size: .9em;
-    padding: 5px 0;
+    padding: 5px;
     text-align: center;
     text-shadow: 1px 1px 0 #FFF;
 } 
@@ -432,6 +432,31 @@ a:hover {
 
 #commentForm .formButtons {
     margin-top: 1em;
+}
+
+
+/* -------------------------------------------------------------------------- */
+/* -----| FOOTER |----------------------------------------------------------- */
+/* -------------------------------------------------------------------------- */
+
+.poweredBy {
+    background: transparent url(images/icons/wpmini-grey.png) no-repeat left center;
+    padding: 1px 0 0 20px;
+}
+
+.themeCredit {
+    background: transparent url(images/icons/layout.png) no-repeat left center;
+    padding: 1px 0 0 20px;
+}
+
+.blogFeed {
+    background: transparent url(images/icons/feed.png) no-repeat left center;
+    padding: 1px 0 0 20px;
+}
+
+.commentFeed {
+    background: transparent url(images/icons/comment.png) no-repeat left center;
+    padding: 1px 0 0 20px;
 }
 
 
