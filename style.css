@@ -316,6 +316,7 @@ a:hover {
 
 .commentsTitle {
     border-top: 3px solid #CCC;
+    border-bottom: 1px dotted #CCC;
     color: #999;
     font-size: .9em;
     font-weight: normal;
@@ -325,7 +326,6 @@ a:hover {
 }
 
 #comments .comment {
-    border-top: 1px dotted #CCC;
     padding: 20px; 
 }
 
