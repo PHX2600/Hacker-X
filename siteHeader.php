@@ -2,7 +2,7 @@
     <div class="widthConstraint clearfix">
         
         <h1 id="siteTitle" class="floatLeft">
-            <a href="<?php bloginfo('wpurl'); ?>">
+            <a href="<?php bloginfo('wpurl'); ?>" title="<?php bloginfo('name'); ?> - <?php bloginfo('description'); ?>">
                 <span class="hideText"><?php bloginfo('name'); ?> - <?php bloginfo('description'); ?></span>
             </a>
         </h1>
