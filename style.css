@@ -314,23 +314,19 @@ a:hover {
     margin-bottom: 5px;
 }
 
-#comments {
+.commentsTitle {
     border-top: 3px solid #CCC;
-    margin-top: 1em;
-}
-
-#commentsTitle {
     color: #999;
     font-size: .9em;
     font-weight: normal;
-    margin: 1em 0 1em;
+    margin: 1em 0 0;
+    padding: 1em 0;
     text-transform: uppercase;
 }
 
 #comments .comment {
     border-top: 1px dotted #CCC;
-    margin-top: 1em;
-    padding: 20px;
+    padding: 20px; 
 }
 
 #comments .avatar {
@@ -345,7 +341,6 @@ a:hover {
     border: 1px solid #DFDFDF;
     border-radius: 5px;
     display: block;
-    margin-left: 116px;
     padding: 20px;
     position: relative;
     width: 720px;
@@ -373,6 +368,61 @@ a:hover {
     right: 100%;
     top: 17px;
     width: 15px;
+}
+
+#commentFormWrapper {
+    border-top: 1px dotted #CCC;
+}
+
+#commentForm {
+    width: 600px;
+}
+
+#commentForm .formRow {
+    display: block;
+    margin: 1em 0;
+}
+
+#commentForm .formLabel {
+    color: #999;
+    display: block;
+    font-size: .85em;
+    padding: 2px 0;
+    text-transform: uppercase;
+}
+
+#commentForm label {
+}
+
+#commentForm label.input {
+    width: 50%;
+}
+
+#commentForm input,
+#commentForm textarea {
+    border: 1px solid #CCC;
+    border-top-color: #A9A9A9;
+    box-sizing: border-box;
+    display: block;
+    font-size: 1.1em;
+    padding: 10px;
+    width: 100%;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+#commentForm input {
+    width: 50%;
+}
+
+#commentForm .required {
+    color: #900;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+#commentForm .formButtons {
+    margin-top: 1em;
 }
 
 
