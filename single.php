@@ -49,7 +49,7 @@
                         </div>
                         
                         <div class="postMetaData">
-                            Posted by, <?php the_author_posts_link() ?>
+                            Posted by, <?php the_author_posts_link(); ?>
                             on <?php the_time(get_option('date_format')); ?>
                             at <?php the_time(); ?>
                             to <?php the_category(', '); ?>
