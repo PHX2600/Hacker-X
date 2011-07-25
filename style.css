@@ -25,7 +25,20 @@ body {
     font-family: Arial, Helvetica, sans-serif, Verdana;
     font-size: .9em;
     min-width: 780px;
+    position: relative;
 }
+
+#bgImage {
+    background: transparent url(images/phx2600_bird_transparent.png) no-repeat top left; 
+    display: block;
+    height: 250px;
+    bottom: 0;
+    overflow: hidden;
+    position: absolute;
+    right: 0;
+    width: 340px;
+    z-index: -1337;
+} 
 
 a {
     color: #981B1E;

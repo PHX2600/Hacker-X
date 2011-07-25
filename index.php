@@ -75,6 +75,8 @@
             
         </div>
     </div>
+    
+    <div id="bgImage"></div>
 
 </body>
 
