@@ -33,7 +33,7 @@ body {
 #bgImage {
     background: transparent url(images/phx2600_bird_transparent.png) no-repeat top left; 
     display: block;
-    height: 250px;
+    height: 275px;
     bottom: 0;
     overflow: hidden;
     position: absolute;
@@ -105,6 +105,7 @@ a:hover {
     font-size: .9em;
     padding: 4px 7px;
     text-decoration: none;
+    text-shadow: 0px -1px 0px #000;
     text-transform: uppercase;
 }
 
