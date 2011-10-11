@@ -1,3 +1,5 @@
+<?php get_sidebar('footer'); ?>
+
 <div id="footer">
     <div id="footerInner" class="clearfix">
         <a href="<?php bloginfo('rss2_url'); ?>" class="blogFeed">Blog Feed</a> &nbsp;&bull;&nbsp;
